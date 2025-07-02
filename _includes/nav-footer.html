@@ -3,18 +3,30 @@
   <ul class="list list--nav">
     {% for item in site.navigation_footer %}
 
-      {% if item.url contains '://' %}
-        {% assign url = item.url %}
-      {% else %}
-        {% assign url = item.url | relative_url %}
-      {% endif %}
+    {% if item.url contains '://' %}
+    {% assign url = item.url %}
+    {% else %}
+    {% assign url = item.url | relative_url %}
+    {% endif %}
 
-      <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
-        <a href="{{ url }}">{{ item.title }}</a>
-      </li>
+    <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+      <a href="{{ url }}">{{ item.title }}</a>
+    </li>
     {% endfor %}
   </ul>
+  <a href="https://www.instagram.com/princend0230/" title="Instagram">
+    {% include icon.html id="instagram" title="Instagram" %}
+  </a>
+  <a href="https://github.com/princend" title="GitHub">
+    {% include icon.html id="github" title="GitHub" %}
+  </a>
+  <a href="https://discord.gg/U9xXgfHX" title="Discord">
+    {% include icon.html id="link" title="Discord" %}
+  </a>
+  <a href="https://hackmd.io/@learnai2024" title="HackMD">
+    {% include icon.html id="link" title="HackMD" %}
+  </a>
 </nav>
 {% else %}
-  {% include nav-default.html %}
+{% include nav-default.html %}
 {% endif %}

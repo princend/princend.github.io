@@ -10,9 +10,6 @@ excerpt: ""
 ---
 
 歡迎來到我的部落格ㄛ(❍ᴥ❍ʋ).
-
-[{% include icon.html id="instagram" title="Instagram" %} ](https://www.instagram.com/princend0230/) [ {% include icon.html id="github" title="GitHub" %} ](https://github.com/princend) [ {% include icon.html id="link" title="link" %} ](https://hackmd.io/@learnai2024)[ {% include icon.html id="link" title="link" %} ](https://discord.gg/U9xXgfHX)
-
 會放一些工作，學習，跟生活日記
 ### Name
 > 你可以叫我Princend或是John
