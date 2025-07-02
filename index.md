@@ -66,6 +66,8 @@ excerpt: ""
   - langchain
   - langgraph
   - vector db
+
+<div style="display:none">  
 <!-- ## 勞贖
 這是我養的老鼠，他的名字叫**勞贖**
 <img src="assets/mouse.jpg" alt="mouse" width="600" height="600">
@@ -84,3 +86,4 @@ excerpt: ""
 ### 好吃一直吃~
 {% include video.html id="8I43VTjc2qA" title="eating" %} -->
 
+</div>
