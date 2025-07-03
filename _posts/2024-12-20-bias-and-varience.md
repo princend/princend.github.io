@@ -5,9 +5,7 @@ categories:
 - AI
 feature_image: "https://picsum.photos/2560/600?image=2"  
 excerpt: |
-   偏差 (Bias) 
-
-1️⃣偏差是模型...
+   偏差 (Bias) 1️⃣偏差是模型...
  
 ---
 
