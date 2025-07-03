@@ -1,3 +1,12 @@
+---
+title: React 學習之路
+categories:
+- Tech
+feature_image: "https://picsum.photos/2560/600?image=2"  
+excerpt: |
+ createRoot...
+---
+
 # React 學習之路
 ## createRoot
 ```tsx=

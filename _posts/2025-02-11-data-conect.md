@@ -1,3 +1,12 @@
+---
+title: Data Connect
+categories:
+- Tech
+feature_image: "https://picsum.photos/2560/600?image=2"  
+excerpt: |
+ Data Connect 是 Google Firebase 的其中一...
+---
+
 # Data Connect
 
 ## Summary
