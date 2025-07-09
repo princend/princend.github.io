@@ -746,6 +746,44 @@ excerpt: ""
     max-width: 100%;
     display: inline-block;
   }
+
+  .project-image-wrapper {
+    perspective: 3500px;
+    border-radius: .5vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transform: perspective(3500px);
+  }
+
+  .project-background-image {
+    aspect-ratio: 3.25 / 4;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    min-width: 100%;
+    max-width: none;
+    min-height: 100%;
+    position: relative;
+  }
+
+  .project-text-wrapper {
+    margin-top: 1.25vw;
+  }
+
+  .project-heading {
+    color: var(--white);
+    margin-bottom: .5rem;
+    font-size: calc(1vw + 1rem);
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+  .paragraph-18 {
+    color: var(--text--white-subdued);
+    font-size: calc(.35vw + 1rem);
+    font-weight: 400;
+    line-height: 1.4em;
+}
 </style>
 
 <section class="section">
