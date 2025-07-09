@@ -413,6 +413,13 @@ excerpt: ""
   align-items: stretch;
 }
 
+body.light-mode .section.featured-projects-section {
+  background: #f8f9fa;
+}
+body.dark-mode .section.featured-projects-section {
+  background: #131106;
+}
+
 .container.featured-projects-container {
   display: flex;
   width: 100%;
@@ -435,6 +442,14 @@ excerpt: ""
   z-index: 2;
   background: #131106;
 }
+body.light-mode .featured-projects-left {
+  color: #222;
+  background: #f8f9fa;
+}
+body.dark-mode .featured-projects-left {
+  color: #fff;
+  background: #131106;
+}
 
 .work-tag {
   display: inline-block;
@@ -447,6 +462,14 @@ excerpt: ""
   margin-bottom: 1.5em;
   letter-spacing: 0.1em;
 }
+body.light-mode .work-tag {
+  background: #ffe082;
+  color: #222;
+}
+body.dark-mode .work-tag {
+  background: #e6c97b;
+  color: #131106;
+}
 
 .featured-title {
   font-size: 3em;
@@ -455,11 +478,23 @@ excerpt: ""
   margin-bottom: 1em;
   line-height: 1.1;
 }
+body.light-mode .featured-title {
+  color: #222;
+}
+body.dark-mode .featured-title {
+  color: #fff;
+}
 
 .featured-desc {
   font-size: 1.1em;
   color: #e0e0e0;
   line-height: 1.7;
+}
+body.light-mode .featured-desc {
+  color: #555;
+}
+body.dark-mode .featured-desc {
+  color: #e0e0e0;
 }
 
 .featured-projects-right {
@@ -471,6 +506,12 @@ excerpt: ""
   overflow-y: auto;
   height: 100vh;
   align-content: flex-start;
+}
+body.light-mode .featured-projects-right {
+  background: #f8f9fa;
+}
+body.dark-mode .featured-projects-right {
+  background: #131106;
 }
 
 .project-card {
@@ -485,9 +526,25 @@ excerpt: ""
   align-items: flex-start;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+body.light-mode .project-card {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+body.dark-mode .project-card {
+  background: #181818;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
 
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+body.light-mode .project-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+body.dark-mode .project-card:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
@@ -507,11 +564,23 @@ excerpt: ""
   font-weight: 700;
   margin-bottom: 0.5em;
 }
+body.light-mode .project-title {
+  color: #222;
+}
+body.dark-mode .project-title {
+  color: #fff;
+}
 
 .project-desc {
   font-size: 1em;
   color: #ccc;
   line-height: 1.5;
+}
+body.light-mode .project-desc {
+  color: #555;
+}
+body.dark-mode .project-desc {
+  color: #ccc;
 }
 
 @media (max-width: 900px) {
