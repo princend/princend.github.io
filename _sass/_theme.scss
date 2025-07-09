@@ -141,6 +141,12 @@ body {
   }
 }
 
+.homepage .content {
+  @include breakpoint(break-1) {
+    width: 100%;
+  }
+}
+
 .share .button {
   margin-right: .3rem;
 }
