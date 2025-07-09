@@ -172,13 +172,16 @@ excerpt: ""
   body.light-mode .content-section {
     background-color: #f8f9fa;
   }
+
   body.light-mode .content-section h3::after {
     background-color: #007bff;
   }
+
   body.light-mode .content-section .info-box {
     background-color: #fff;
     border-color: #e2e8f0;
   }
+
   body.light-mode .content-section li::before {
     background-color: #007bff;
   }
@@ -187,16 +190,21 @@ excerpt: ""
   body.dark-mode .content-section {
     background-color: #1e293b;
   }
+
   body.dark-mode .content-section h3 {
     color: #e0f2fe;
   }
+
   body.dark-mode .content-section h3::after {
     background-color: #38bdf8;
   }
+
   body.dark-mode .content-section .info-box {
-    background-color: #28364a; /* A slightly lighter shade than the section */
+    background-color: #28364a;
+    /* A slightly lighter shade than the section */
     border-color: #334155;
   }
+
   body.dark-mode .content-section li::before {
     background-color: #38bdf8;
   }
@@ -209,27 +217,31 @@ excerpt: ""
     position: relative;
     /* 保留給時間軸定位用 */
   }
+
   /* The actual timeline line */
   .experience::before {
     content: '';
     position: absolute;
-    top: 50px; /* Start after the title */
+    top: 50px;
+    /* Start after the title */
     bottom: 0;
     left: 50%;
     width: 2px;
     transform: translateX(-50%);
-    margin-top:3rem;
+    margin-top: 2rem;
   }
 
   .experience h2 {
     margin-bottom: 3rem;
     text-align: center;
+    font-size: 3rem;
   }
 
   .job {
     margin-bottom: 30px;
     position: relative;
-    width: calc(50% - 25px); /* 50% width minus some gap */
+    width: calc(50% - 25px);
+    /* 50% width minus some gap */
   }
 
   /* Alternating job blocks */
@@ -239,7 +251,8 @@ excerpt: ""
   }
 
   .job:nth-of-type(even) {
-    left: calc(50% + 25px); /* 50% plus the gap */
+    left: calc(50% + 25px);
+    /* 50% plus the gap */
   }
 
   .job::after {
@@ -254,12 +267,15 @@ excerpt: ""
 
   /* Positioning the dots on the timeline */
   .job:nth-of-type(odd)::after {
-    right: -31px; /* (25px gap + half of dot width) */
+    right: -31px;
+    /* (25px gap + half of dot width) */
   }
 
   .job:nth-of-type(even)::after {
-    left: -31px; /* (25px gap + half of dot width) */
+    left: -31px;
+    /* (25px gap + half of dot width) */
   }
+
   .job-title {
     font-weight: bold;
     font-size: 1.2em;
@@ -392,7 +408,7 @@ excerpt: ""
 </div>
 
 <div class="experience">
-  <h2>工作經歷</h2>
+  <h2>經歷</h2>
   <div class="job">
     <div class="job-title">軟體工程師</div>
     <div class="company">半導體業・2025.01 - 2025.07</div>
@@ -421,9 +437,6 @@ excerpt: ""
       醫工系統及健檢系統開發及維護。
     </div>
   </div>
-</div>
-<div class="experience">
-  <h2>學歷</h2>
   <div class="job">
     <div class="job-title">國立臺灣科技大學</div>
     <div class="company">資訊管理學系・2010.09 - 2014.06</div>
@@ -433,3 +446,14 @@ excerpt: ""
     <div class="company">資訊科・2008.09 - 2010.06</div>
   </div>
 </div>
+<!-- <div class="experience">
+  <h2>學歷</h2>
+  <div class="job">
+    <div class="job-title">國立臺灣科技大學</div>
+    <div class="company">資訊管理學系・2010.09 - 2014.06</div>
+  </div>
+  <div class="job">
+    <div class="job-title">臺中市立臺中工業高級中等學校</div>
+    <div class="company">資訊科・2008.09 - 2010.06</div>
+  </div>
+</div> -->
