@@ -27,7 +27,8 @@ excerpt: ""
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    will-change: opacity, transform; /* Performance hint */
+    will-change: opacity, transform;
+    /* Performance hint */
   }
 
   .fade-in-section.is-visible {
@@ -41,7 +42,8 @@ excerpt: ""
     margin-bottom: 2rem;
     /* border-radius: 12px; */
   }
-  .content-section-info{
+
+  .content-section-info {
     text-align: center;
   }
 
@@ -300,6 +302,7 @@ excerpt: ""
   .job:hover {
     transform: translateY(-5px);
   }
+
   /* Alternating job blocks */
   .job:nth-of-type(odd) {
     left: 0;
@@ -314,7 +317,8 @@ excerpt: ""
   .job::after {
     content: "";
     position: absolute;
-    top: calc(1.5rem + 8px); /* Adjust for padding */
+    top: calc(1.5rem + 8px);
+    /* Adjust for padding */
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -323,11 +327,13 @@ excerpt: ""
 
   /* Positioning the dots on the timeline */
   .job:nth-of-type(odd)::after {
-    right: -46px; /* (40px gap + half of dot width) */
+    right: -46px;
+    /* (40px gap + half of dot width) */
   }
 
   .job:nth-of-type(even)::after {
-    left: -46px; /* (40px gap + half of dot width) */
+    left: -46px;
+    /* (40px gap + half of dot width) */
   }
 
   .job-title {
@@ -354,7 +360,7 @@ excerpt: ""
   }
 
   body.light-mode .job {
-    background-color: #fff; 
+    background-color: #fff;
   }
 
   body.light-mode .job::after {
@@ -397,7 +403,6 @@ excerpt: ""
   body.dark-mode .description {
     color: #94a3b8;
   }
-  
 </style>
 
 <div class="welcome-message">
@@ -455,7 +460,13 @@ excerpt: ""
       </div>
     </div>
     <div class="topic-card">
-      <h4>React與Vue框架學習</h4>
+      <h4>前端框架學習</h4>
+      <div class="topic-items">
+        <span>React</span>
+        <span>Vue</span>
+        <span>next.js</span>
+        <span>threejs</span>
+      </div>
     </div>
     <div class="topic-card">
       <h4>RAG 技術</h4>
