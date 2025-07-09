@@ -17,7 +17,7 @@ excerpt: ""
 }
 .grid-container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 .card {
@@ -91,6 +91,57 @@ body.dark-mode .card:active {
   transform: translateY(1px) scale(0.99);
   box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0 0 0.5rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-dot {
+  position: absolute;
+  left: -1.5rem; /* Match padding-left of .timeline */
+  top: 0.35em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translateX(-4px); /* Center the dot on the line */
+}
+.timeline-content h5 {
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+}
+.timeline-content p {
+  margin: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* Light Mode Timeline */
+body.light-mode .timeline::before { background: #eee; }
+body.light-mode .timeline-dot { background: #aaa; border: 2px solid #fdfdfd; }
+body.light-mode .timeline-content p { color: #666; }
+
+/* Dark Mode Timeline */
+body.dark-mode .timeline::before { background: #555; }
+body.dark-mode .timeline-dot { background: #888; border: 2px solid #3c3c3c; }
+body.dark-mode .timeline-content p { color: #bbb; }
 </style>
 
 <div class="welcome-message"> 
@@ -112,18 +163,56 @@ body.dark-mode .card:active {
 
   <div class="card">
     <h3>學經歷 (Education &amp; Experience)</h3>
-    <h4>學歷</h4>
-    <ul>
-      <li> 國立臺灣科技大學</li>
-      <li> 臺中市立臺中工業高級中等學校</li>
-      <li> 臺中市立神岡國民中學</li>
-      <li> 臺中市岸裡國民小學</li>
-    </ul>
-    <h4>工作經驗</h4>
-    <ul>
-      <li> 軟體工程師</li>
-      <li> 前端工程師</li>
-      <li> 全端工程師</li>
+    <ul class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>軟體工程師</h5>
+          <p>工作經驗</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>前端工程師</h5>
+          <p>工作經驗</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>全端工程師</h5>
+          <p>工作經驗</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>國立臺灣科技大學</h5>
+          <p>學歷</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>臺中市立臺中工業高級中等學校</h5>
+          <p>學歷</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>臺中市立神岡國民中學</h5>
+          <p>學歷</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>臺中市岸裡國民小學</h5>
+          <p>學歷</p>
+        </div>
+      </li>
     </ul>
   </div>
 
