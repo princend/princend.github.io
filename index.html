@@ -404,207 +404,231 @@ excerpt: ""
     color: #94a3b8;
   }
 
-/* === Featured Projects Section (Webflow Style) === */
-.section.featured-projects-section {
-  /* background: #131106; */
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: stretch;
-  margin-bottom: 2rem;
-}
+  /* === Featured Projects Section (Webflow Style) === */
+  .section.featured-projects-section {
+    /* background: #131106; */
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2rem;
+  }
 
-body.light-mode .section.featured-projects-section {
-  /* background: #f8f9fa; */
-}
-body.dark-mode .section.featured-projects-section {
-  /* background: #131106; */
-}
+  body.light-mode .section.featured-projects-section {
+    /* background: #f8f9fa; */
+  }
 
-.container.featured-projects-container {
-  display: flex;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0;
-}
+  body.dark-mode .section.featured-projects-section {
+    /* background: #131106; */
+  }
 
-.featured-projects-left {
-  flex: 0 0 38vw;
-  padding: 6vw 3vw 6vw 6vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  position: sticky;
-  top: 3vw;
-  align-self: flex-start;
-  left: 0;
-  z-index: 2;
-  /* height: 100vh; */
-  /* background: #131106; */
-}
-body.light-mode .featured-projects-left {
-  color: #222;
-  /* background: #f8f9fa; */
-}
-body.dark-mode .featured-projects-left {
-  color: #fff;
-  /* background: #131106; */
-}
-
-.work-tag {
-  display: inline-block;
-  background: #e6c97b;
-  color: #131106;
-  font-weight: bold;
-  font-size: 1.1em;
-  padding: 0.3em 1em;
-  border-radius: 4px;
-  margin-bottom: 1.5em;
-  letter-spacing: 0.1em;
-}
-body.light-mode .work-tag {
-  background: #ffe082;
-  color: #222;
-}
-body.dark-mode .work-tag {
-  background: #e6c97b;
-  color: #131106;
-}
-
-.featured-title {
-  font-size: 3em;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 1em;
-  line-height: 1.1;
-}
-body.light-mode .featured-title {
-  color: #222;
-}
-body.dark-mode .featured-title {
-  color: #fff;
-}
-
-.featured-desc {
-  font-size: 1.1em;
-  color: #e0e0e0;
-  line-height: 1.7;
-}
-body.light-mode .featured-desc {
-  color: #555;
-}
-body.dark-mode .featured-desc {
-  color: #e0e0e0;
-}
-
-.featured-projects-right {
-  flex: 1 1 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3vw 2vw;
-  padding: 6vw 6vw 6vw 3vw;
-  /* overflow-y: auto; */
-  height: 100vh;
-  align-content: flex-start;
-  /* background: #f8f9fa; */
-}
-body.light-mode .featured-projects-right {
-  /* background: #f8f9fa; */
-}
-body.dark-mode .featured-projects-right {
-  /* background: #131106; */
-}
-
-.project-card {
-  background: #181818;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-  padding: 2vw 2vw 1.5vw 2vw;
-  color: #fff;
-  margin-bottom: 2vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-body.light-mode .project-card {
-  background: #fff;
-  color: #222;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-}
-body.dark-mode .project-card {
-  background: #181818;
-  color: #fff;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-}
-
-.project-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-}
-body.light-mode .project-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-}
-body.dark-mode .project-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-}
-
-.project-card:nth-child(even) {
-  margin-top: 4vw; /* 交錯效果 */
-}
-
-.project-img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1.2em;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-body.light-mode .project-title {
-  color: #222;
-}
-body.dark-mode .project-title {
-  color: #fff;
-}
-
-.project-desc {
-  font-size: 1em;
-  color: #ccc;
-  line-height: 1.5;
-}
-body.light-mode .project-desc {
-  color: #555;
-}
-body.dark-mode .project-desc {
-  color: #ccc;
-}
-
-@media (max-width: 900px) {
   .container.featured-projects-container {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .featured-projects-left {
+    flex: 0 0 38vw;
+    padding: 6vw 3vw 6vw 6vw;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    position: sticky;
+    top: 3vw;
+    align-self: flex-start;
+    left: 0;
+    z-index: 2;
+    /* height: 100vh; */
+    /* background: #131106; */
   }
-  .featured-projects-left, .featured-projects-right {
-    width: 100vw;
-    height: auto;
-    position: static;
-    padding: 2em 1em;
+
+  body.light-mode .featured-projects-left {
+    color: #222;
+    /* background: #f8f9fa; */
   }
+
+  body.dark-mode .featured-projects-left {
+    color: #fff;
+    /* background: #131106; */
+  }
+
+  .work-tag {
+    display: inline-block;
+    background: #e6c97b;
+    color: #131106;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.3em 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+    letter-spacing: 0.1em;
+  }
+
+  body.light-mode .work-tag {
+    background: #ffe082;
+    color: #222;
+  }
+
+  body.dark-mode .work-tag {
+    background: #e6c97b;
+    color: #131106;
+  }
+
+  .featured-title {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 1em;
+    line-height: 1.1;
+  }
+
+  body.light-mode .featured-title {
+    color: #222;
+  }
+
+  body.dark-mode .featured-title {
+    color: #fff;
+  }
+
+  .featured-desc {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    line-height: 1.7;
+  }
+
+  body.light-mode .featured-desc {
+    color: #555;
+  }
+
+  body.dark-mode .featured-desc {
+    color: #e0e0e0;
+  }
+
   .featured-projects-right {
-    grid-template-columns: 1fr;
-    gap: 2vw;
-    padding: 2em 1em;
+    flex: 1 1 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw 2vw;
+    padding: 6vw 6vw 6vw 3vw;
+    /* overflow-y: auto; */
+    height: 100vh;
+    align-content: flex-start;
+    /* background: #f8f9fa; */
   }
+
+  body.light-mode .featured-projects-right {
+    /* background: #f8f9fa; */
+  }
+
+  body.dark-mode .featured-projects-right {
+    /* background: #131106; */
+  }
+
+  .project-card {
+    background: #181818;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    padding: 2vw 2vw 1.5vw 2vw;
+    color: #fff;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  body.light-mode .project-card {
+    background: #fff;
+    color: #222;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  }
+
+  body.dark-mode .project-card {
+    background: #181818;
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  body.light-mode .project-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  body.dark-mode .project-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
   .project-card:nth-child(even) {
-    margin-top: 0;
+    margin-top: 4vw;
+    /* 交錯效果 */
   }
-}
+
+  .project-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.2em;
+    object-fit: cover;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  body.light-mode .project-title {
+    color: #222;
+  }
+
+  body.dark-mode .project-title {
+    color: #fff;
+  }
+
+  .project-desc {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.5;
+  }
+
+  body.light-mode .project-desc {
+    color: #555;
+  }
+
+  body.dark-mode .project-desc {
+    color: #ccc;
+  }
+
+  @media (max-width: 900px) {
+    .container.featured-projects-container {
+      flex-direction: column;
+    }
+
+    .featured-projects-left,
+    .featured-projects-right {
+      width: 100vw;
+      height: auto;
+      position: static;
+      padding: 2em 1em;
+    }
+
+    .featured-projects-right {
+      grid-template-columns: 1fr;
+      gap: 2vw;
+      padding: 2em 1em;
+    }
+
+    .project-card:nth-child(even) {
+      margin-top: 0;
+    }
+  }
 </style>
 
 <div class="welcome-message">
@@ -641,6 +665,155 @@ body.dark-mode .project-desc {
     <span class="tag">武術社</span>
   </div>
 </div>
+
+<style>
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    position: relative;
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 94%;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+  }
+
+  .w-layout-blockcontainer {
+    display: block;
+  }
+
+  .grid---ratio-1x2 {
+    grid-column-gap: 8%;
+    grid-row-gap: 8%;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    place-items: start;
+    width: 100%;
+  }
+
+  .w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .title-wrapper-sticky {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 36rem;
+    display: flex;
+    position: sticky;
+    top: 8.5rem;
+  }
+
+  .project-grid {
+    grid-column-gap: 8%;
+    grid-row-gap: 8%;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-left: auto;
+    margin-right: 0;
+    padding-bottom: 24vw;
+    display: grid;
+  }
+
+  .project-link-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+  }
+</style>
+
+<section class="section">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-layout-grid grid---ratio-1x2">
+      <div class="title-wrapper-sticky">
+        <div class="label-heading">Work</div>
+        <div class="heading-h2">Featured Projects</div>
+        <p class="paragraph-16">Our design approach prioritizes the needs and preferences of users. We focus on creating
+          products that enhance the user experience, ensuring that they are both functional and enjoyable to use.</p>
+      </div>
+      <div class="w-layout-grid project-grid"><a data-w-id="e3b997b0-db7d-742f-bd6e-26281dcb2ea6"
+          style="transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+          href="/projects/lim-geomatics" class="project-link-wrapper w-inline-block">
+          <div class="project-image-wrapper"><img
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
+              srcset="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325da_plane%20black%20background.avif 500w, https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325da_plane%20black%20background.avif 800w, https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325da_plane%20black%20background.avif 1307w"
+              alt=""
+              src="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325da_plane%20black%20background.avif"
+              loading="lazy" class="project-background-image"></div>
+          <div class="project-text-wrapper">
+            <h3 class="project-heading" style="color: rgb(255, 255, 255);">ElectraX</h3>
+            <p class="paragraph-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </a><a data-w-id="65bf88b5-67cd-f480-ece1-c6824dc0a836"
+          style="transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+          href="/projects/lim-geomatics" class="project-link-wrapper project-even w-inline-block">
+          <div class="project-image-wrapper"><img
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
+              srcset="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b5_enigma%20studio%20mobile.avif 500w, https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b5_enigma%20studio%20mobile.avif 800w, https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b5_enigma%20studio%20mobile.avif 1394w"
+              alt=""
+              src="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b5_enigma%20studio%20mobile.avif"
+              loading="lazy" class="project-background-image"></div>
+          <div class="project-text-wrapper">
+            <h3 class="project-heading" style="color: rgb(255, 255, 255);">Enigma AI</h3>
+            <p class="paragraph-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </a><a data-w-id="eceac7d6-76ee-a515-3b6d-4fc2977862ab"
+          style="transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+          href="/projects/lim-geomatics" class="project-link-wrapper w-inline-block">
+          <div class="project-image-wrapper"><img
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
+              srcset="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c532527_enigma%20project%202.avif 500w, https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c532527_enigma%20project%202.avif 958w"
+              alt=""
+              src="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c532527_enigma%20project%202.avif"
+              loading="lazy" class="project-background-image"></div>
+          <div class="project-text-wrapper">
+            <h3 class="project-heading" style="color: rgb(255, 255, 255);">Marble Gallery</h3>
+            <p class="paragraph-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </a><a data-w-id="2803e373-3068-89a8-c069-f5216d1c5479"
+          style="transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+          href="/projects/lim-geomatics" class="project-link-wrapper project-even w-inline-block">
+          <div class="project-image-wrapper"><img
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
+              srcset="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b7_enigma%20project%201.avif 500w, https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b7_enigma%20project%201.avif 932w"
+              alt=""
+              src="https://cdn.prod.website-files.com/686dc4bd74e90f5e7c5323f7/686dc4bd74e90f5e7c5325b7_enigma%20project%201.avif"
+              loading="lazy" class="project-background-image"></div>
+          <div class="project-text-wrapper">
+            <h3 class="project-heading" style="color: rgb(255, 255, 255);">Modern Bauhaus</h3>
+            <p class="paragraph-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </a></div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Featured Projects Section Start -->
 <section class="section featured-projects-section fade-in-section">
