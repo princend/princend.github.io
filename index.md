@@ -92,62 +92,11 @@ body.dark-mode .card:active {
   box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
 
-/* Timeline */
-.timeline {
-  position: relative;
-  list-style: none;
-  padding-left: 1.5rem;
-  margin: 1.5rem 0 0 0.5rem;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-}
-.timeline-item {
-  position: relative;
-  margin-bottom: 1.2rem;
-}
-.timeline-item:last-child {
-  margin-bottom: 0;
-}
-.timeline-dot {
-  position: absolute;
-  left: -1.5rem; /* Match padding-left of .timeline */
-  top: 0.35em;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  transform: translateX(-4px); /* Center the dot on the line */
-}
-.timeline-content h5 {
-  margin: 0 0 0.25rem 0;
-  font-weight: 600;
-}
-.timeline-content p {
-  margin: 0;
-  font-size: 0.9em;
-  font-style: italic;
-}
-
-/* Light Mode Timeline */
-body.light-mode .timeline::before { background: #eee; }
-body.light-mode .timeline-dot { background: #aaa; border: 2px solid #fdfdfd; }
-body.light-mode .timeline-content p { color: #666; }
-
-/* Dark Mode Timeline */
-body.dark-mode .timeline::before { background: #555; }
-body.dark-mode .timeline-dot { background: #888; border: 2px solid #3c3c3c; }
-body.dark-mode .timeline-content p { color: #bbb; }
-
 /* Experience Section - Base */
 .experience {
   border-radius: 15px;
   padding: 30px;
-  max-width: 700px;
+  width:100%;
   margin: auto;
   position: relative;
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.2s;
@@ -285,12 +234,6 @@ body.dark-mode .experience:active {
         <div class="job">
             <div class="job-title">臺中市立臺中工業高級中等學校</div>
             <div class="company">資訊科・2008.09 - 2010.06</div>
-        </div>
-        <div class="job">
-            <div class="job-title">臺中市立神岡國民中學</div>
-        </div>
-                <div class="job">
-            <div class="job-title">臺中市岸裡國民小學</div>
         </div>
     </div>  
 
