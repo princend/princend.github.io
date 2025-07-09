@@ -1,3 +1,6 @@
+{% if page.url == "/" %}
+  {% include index.html %}
+{% else %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "zh-TW" }}">
 
@@ -45,7 +48,7 @@
     {% include site-before-start.html %}
   </head>
 
-  <body class="layout-{{ page.layout }}{% if page.url == "/" %} homepage{% endif %}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+  <body class="layout-{{ page.layout }}{% if page.url == "/" %} homepage{% endif %}">
 
     
 
@@ -90,3 +93,5 @@
   </body>
 
 </html>
+
+{% endif %}
