@@ -43,6 +43,15 @@ body {
   overflow: hidden;
 }
 
+.header--sticky {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
 .feature {
   padding-bottom: .4rem;
   margin-bottom: 1.6rem;
@@ -466,12 +475,24 @@ pre code {
 body.light-mode {
   background-color: #ffffff;
   color: #000000;
+  .header--sticky {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
 }
 
 /* 暗黑模式 */
 body.dark-mode {
   background-color: #343131;
   color: #ffffff;
+  .header--sticky {
+    background-color: rgba(52, 49, 49, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  }
 }
 
 .theme-toggle-btn{
