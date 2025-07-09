@@ -744,6 +744,7 @@ excerpt: ""
     position: relative;
     transition: transform 0.2s, box-shadow 0.2s;
   }
+
   .project-link-wrapper:hover {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
@@ -807,17 +808,20 @@ excerpt: ""
     letter-spacing: .04em;
     text-transform: uppercase;
     margin-bottom: .5rem;
-    padding: 1px 6px;
+    padding: 10px;
     font-size: calc(.5vw + .75rem);
     font-weight: 500;
     line-height: 1.2em;
+    border-radius: 5px;
   }
+
   body.light-mode .label-heading {
-    background-color: #ffe082;
-    color: #222;
+    background-color: #e9ecef;
+    color: #495057;
   }
+
   body.dark-mode .label-heading {
-    background-color: #e6c97b;
+    background-color: #334155;
     color: #131106;
   }
 
@@ -827,6 +831,15 @@ excerpt: ""
     align-items: flex-start;
     display: flex;
     bottom: -50%;
+  }
+
+  .heading-h2 {
+    /* color: var(--white); */
+    margin-bottom: 1.5rem;
+    font-size: calc(2vw + 2rem);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1em;
   }
 </style>
 
@@ -841,51 +854,37 @@ excerpt: ""
         </p>
       </div>
       <div class="project-grid">
-        <div
-          class="project-link-wrapper w-inline-block">
+        <div class="project-link-wrapper w-inline-block">
           <div class="project-image-wrapper"><img
-              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
-              
-              alt=""
-              src="/assets/homepage/linebot.jpg"
-              loading="lazy" class="project-background-image"></div>
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw" alt=""
+              src="/assets/homepage/linebot.jpg" loading="lazy" class="project-background-image"></div>
           <div class="project-text-wrapper">
             <h3 class="project-heading" style="color: rgb(255, 255, 255);">Line Bot</h3>
             <p class="paragraph-18">AI 問答、夜市營業表、台灣各地區天氣、英文對話生成...</p>
           </div>
         </div>
-        <div
-          class="project-link-wrapper project-even w-inline-block">
+        <div class="project-link-wrapper project-even w-inline-block">
           <div class="project-image-wrapper"><img
-              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
-              
-              alt=""
-              src="./assets/homepage/n8n.PNG"
-              loading="lazy" class="project-background-image"></div>
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw" alt=""
+              src="./assets/homepage/n8n.PNG" loading="lazy" class="project-background-image"></div>
           <div class="project-text-wrapper">
             <h3 class="project-heading" style="color: rgb(255, 255, 255);">n8n 工作流</h3>
             <p class="paragraph-18">擷取email訊息、google sheet串接、Postgres memory、SerpAPI...</p>
           </div>
         </div>
-        <div
-          class="project-link-wrapper w-inline-block">
+        <div class="project-link-wrapper w-inline-block">
           <div class="project-image-wrapper"><img
-              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
-              alt=""
-              src="./assets/homepage/threejs.jpg"
-              loading="lazy" class="project-background-image"></div>
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw" alt=""
+              src="./assets/homepage/threejs.jpg" loading="lazy" class="project-background-image"></div>
           <div class="project-text-wrapper">
             <h3 class="project-heading" style="color: rgb(255, 255, 255);">前端框架學習</h3>
             <p class="paragraph-18">React、next.js、Vue、three.js</p>
           </div>
         </div>
-        <div
-          class="project-link-wrapper project-even w-inline-block">
+        <div class="project-link-wrapper project-even w-inline-block">
           <div class="project-image-wrapper"><img
-              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw"
-              alt=""
-              src="./assets/homepage/saddlepoint.gif"
-              loading="lazy" class="project-background-image"></div>
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 44vw, 43vw" alt=""
+              src="./assets/homepage/saddlepoint.gif" loading="lazy" class="project-background-image"></div>
           <div class="project-text-wrapper">
             <h3 class="project-heading" style="color: rgb(255, 255, 255);">AI</h3>
             <p class="paragraph-18">LLM finetuning、RAG、Vector DB...</p>
