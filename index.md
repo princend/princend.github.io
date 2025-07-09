@@ -1,5 +1,5 @@
 ---
-title: Princend's blog
+title: 歡迎來到我的部落格ㄛ(❍ᴥ❍ʋ). 這裡會放一些工作、學習跟生活日記。
 feature_text: |  
   
     
@@ -93,11 +93,8 @@ body.dark-mode .card:active {
 }
 </style>
 
-<div class="welcome-message">
-  歡迎來到我的部落格ㄛ(❍ᴥ❍ʋ).
-  <br>
-  這裡會放一些工作、學習跟生活日記。
-</div>
+<div class="welcome-message"> 
+</div> 
 
 <div class="grid-container">
   <div class="card">
