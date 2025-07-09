@@ -182,12 +182,12 @@ body.dark-mode .experience:active {
 
 <div class="grid-container">
   <div class="card">
-    <h3>關於我 (About Me)</h3>
-    <h4>名字 (Name)</h4>
+    <h3>關於我 </h3>
+    <h4>名字 </h4>
     <blockquote>你可以叫我 Princend 或是 John</blockquote>
-    <h4>名稱由來 (Why Princend?)</h4>
+    <h4>Why Princend?</h4>
     <blockquote><strong>Princend</strong> = <strong>Prince</strong> + <strong>and</strong><br>因為 "Prince" 這個ID已被使用，而我中文名字的最後一個字發音像 "and"，所以組合成了 "Princend"。</blockquote>
-    <h4>座右銘 (Motto)</h4>
+    <h4>座右銘</h4>
     <ul>
       <li> 興趣可以當飯吃嗎？只能把吃飯當興趣。</li>
       <li> 無人自願作惡。</li>
@@ -238,7 +238,7 @@ body.dark-mode .experience:active {
     </div>  
 
   <div class="card">
-    <h3>技能與興趣 (Skills &amp; Hobbies)</h3>
+    <h3>技能與興趣</h3>
     <h4>電腦語言</h4>
     <ul>
       <li> C++</li>
@@ -262,8 +262,7 @@ body.dark-mode .experience:active {
   </div>
 
   <div class="card">
-    <h3>近期專案 (Recent Projects)</h3>
-    <p>近期熱衷於開發與研究：</p>
+    <h3>近期熱衷於開發與研究：</h3>
       <h4>Line Bot</h4>
         <ul>
           <li>AI 問答</li>
