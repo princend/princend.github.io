@@ -164,11 +164,11 @@ body.dark-mode .timeline-content p { color: #bbb; }
         .job::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: 30px;
             left: 9px;
             width: 2px;
             height: 100%;
-            background-color: #38bdf8;
+            background-color: #277496;
         }
         .job::after {
             content: "";
@@ -177,12 +177,12 @@ body.dark-mode .timeline-content p { color: #bbb; }
             left: 4px;
             width: 12px;
             height: 12px;
-            background-color: #38bdf8;
+            background-color: #277496;
             border-radius: 50%;
             z-index: 1;
         }
         .job:last-child::before {
-            height: 8px; /* 最後一個只畫到圓點為止 */
+            height: 0px; /* 最後一個只畫到圓點為止 */
         }
 
         .job-title {
