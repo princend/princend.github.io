@@ -131,9 +131,9 @@ body.dark-mode .card:active {
     <h3>技能與興趣 (Skills &amp; Hobbies)</h3>
     <h4>電腦語言</h4>
     <ul>
-      <li>- C++</li>
-      <li>- TypeScript</li>
-      <li>- Python</li>
+      <li> C++</li>
+      <li> TypeScript</li>
+      <li> Python</li>
     </ul>
     <h4>興趣</h4>
     <ul>
@@ -155,23 +155,23 @@ body.dark-mode .card:active {
     <h3>近期專案 (Recent Projects)</h3>
     <p>近期熱衷於開發與研究：</p>
     <ul>
-      <li><strong>Line Bot</strong>
-        <ul style="padding-left: 1.5rem; list-style-type: circle;">
+      <h4>Line Bot</h4>
+        <ul>
           <li>AI 問答</li>
           <li>夜市營業表</li>
           <li>台灣各地區天氣</li>
         </ul>
       </li>
-      <li><strong>n8n 工作流</strong>
-        <ul style="padding-left: 1.5rem; list-style-type: circle;">
+      <h4>n8n 工作流</h4>
+        <ul>
           <li>擷取Brief AI電子報發送至Line群組</li>
           <li>英文造句文法檢查</li>
           <li>串接Google Sheet儲存單字</li>
         </ul>
       </li>
-      <li><strong>React與Vue框架學習</strong></li>
-      <li><strong>RAG 技術</strong>
-        <ul style="padding-left: 1.5rem; list-style-type: circle;">
+      <h4>React與Vue框架學習</h4>
+      <h4>RAG 技術</h4>
+        <ul>
           <li>LangChain</li>
           <li>LangGraph</li>
           <li>Vector DB</li>
