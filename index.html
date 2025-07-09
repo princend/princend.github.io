@@ -112,7 +112,7 @@ excerpt: ""
   .content-section {
     padding: 2rem;
     margin-bottom: 2rem;
-    border-radius: 12px;
+    /* border-radius: 12px; */
   }
 
   .content-section h3 {
@@ -139,7 +139,7 @@ excerpt: ""
     font-weight: 600;
   }
 
-  .content-section blockquote {
+  .content-section .info-box {
     margin-left: 0;
     padding: 1rem 1.5rem;
     border-radius: 8px;
@@ -159,11 +159,12 @@ excerpt: ""
   }
 
   .content-section li::before {
-    content: '→';
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     margin-right: 0.75rem;
-    font-weight: bold;
-    font-size: 1.2em;
-    line-height: 1;
   }
 
   /* Light Mode */
@@ -173,12 +174,12 @@ excerpt: ""
   body.light-mode .content-section h3::after {
     background-color: #007bff;
   }
-  body.light-mode .content-section blockquote {
+  body.light-mode .content-section .info-box {
     background-color: #e9ecef;
     border-left: 4px solid #007bff;
   }
   body.light-mode .content-section li::before {
-    color: #007bff;
+    background-color: #007bff;
   }
 
   /* Dark Mode */
@@ -191,12 +192,12 @@ excerpt: ""
   body.dark-mode .content-section h3::after {
     background-color: #38bdf8;
   }
-  body.dark-mode .content-section blockquote {
+  body.dark-mode .content-section .info-box {
     background-color: #334155;
     border-left: 4px solid #38bdf8;
   }
   body.dark-mode .content-section li::before {
-    color: #38bdf8;
+    background-color: #38bdf8;
   }
 
   /* Experience Section - Base */
@@ -315,10 +316,11 @@ excerpt: ""
 <div class="content-section">
   <h3>關於我 </h3>
   <h4>名字 </h4>
-  <blockquote>你可以叫我 Princend 或是 John</blockquote>
+  <div class="info-box">你可以叫我 Princend 或是 John</div>
   <h4>Why Princend?</h4>
-  <blockquote><strong>Princend</strong> = <strong>Prince</strong> + <strong>and</strong><br>因為 "Prince"
+  <div class="info-box"><strong>Princend</strong> = <strong>Prince</strong> + <strong>and</strong><br>因為 "Prince"
     這個ID已被使用，而我中文名字的最後一個字發音像 "and"，所以組合成了 "Princend"。</blockquote>
+  </div>
   <h4>座右銘</h4>
   <ul>
     <li> 興趣可以當飯吃嗎？只能把吃飯當興趣。</li>
