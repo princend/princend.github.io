@@ -680,7 +680,6 @@ excerpt: ""
     align-content: flex-start;
   }
   .skills-card {
-    background: #181818;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
     padding: 2vw 2vw 1.5vw 2vw;
@@ -697,7 +696,14 @@ excerpt: ""
     z-index: 3;
   }
   .skills-card:nth-child(even) {
-    margin-top: 8vw;
+    position: relative;
+    bottom: -50%;
+    /* margin-top: 8vw; */
+  }
+  @media (max-width: 900px) {
+    .skills-card:nth-child(even) {
+      bottom: 0;
+    }
   }
   .skills-card-title {
     font-size: 1.3em;
@@ -741,7 +747,7 @@ excerpt: ""
 </style>
 <section class="skills-section fade-in-section">
   <div class="skills-container">
-    <div class="skills-cards-panel title-wrapper-sticky">
+    <div class="skills-cards-panel">
       <div class="skills-card">
         <div class="skills-card-title">電腦語言</div>
         <div class="skills-tags">
