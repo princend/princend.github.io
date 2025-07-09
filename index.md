@@ -142,10 +142,52 @@ body.light-mode .timeline-content p { color: #666; }
 body.dark-mode .timeline::before { background: #555; }
 body.dark-mode .timeline-dot { background: #888; border: 2px solid #3c3c3c; }
 body.dark-mode .timeline-content p { color: #bbb; }
+
+        .experience {
+            background-color: #1e293b;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        .experience h2 {
+            color: #e0f2fe;
+            margin-bottom: 20px;
+        }
+        .job {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .job::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #38bdf8;
+            border-radius: 50%;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #f1f5f9;
+            font-size: 1.2em;
+        }
+        .company {
+            color: #38bdf8;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+        .description {
+            color: #94a3b8;
+            line-height: 1.6;
+        }
 </style>
 
-<div class="welcome-message"> 
-</div> 
+<div class="welcome-message">
+</div>
 
 <div class="grid-container">
   <div class="card">
@@ -215,6 +257,26 @@ body.dark-mode .timeline-content p { color: #bbb; }
       </li>
     </ul>
   </div>
+
+  <div class="experience">
+     <h2>工作經歷</h2>
+
+        <div class="job">
+            <div class="job-title">前端開發工程師</div>
+            <div class="company">科技公司・2022 - 現在</div>
+            <div class="description">
+                負責開發和維護公司主要產品的前端介面，使用 React 和 TypeScript 建構高效能的 Web 應用程式，並與設計師和後端工程師密切合作。
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-title">初級前端開發者</div>
+            <div class="company">新創公司・2021 - 2022</div>
+            <div class="description">
+                參與多個客戶專案的開發，學習現代前端框架和工具，並建立了紮實的 JavaScript 和 CSS 基礎。
+            </div>
+        </div>
+    </div>
 
   <div class="card">
     <h3>技能與興趣 (Skills &amp; Hobbies)</h3>
