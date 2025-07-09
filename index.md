@@ -154,21 +154,18 @@ body.dark-mode .card:active {
   <div class="card">
     <h3>近期專案 (Recent Projects)</h3>
     <p>近期熱衷於開發與研究：</p>
-    <ul>
       <h4>Line Bot</h4>
         <ul>
           <li>AI 問答</li>
           <li>夜市營業表</li>
           <li>台灣各地區天氣</li>
         </ul>
-      </li>
       <h4>n8n 工作流</h4>
         <ul>
           <li>擷取Brief AI電子報發送至Line群組</li>
           <li>英文造句文法檢查</li>
           <li>串接Google Sheet儲存單字</li>
         </ul>
-      </li>
       <h4>React與Vue框架學習</h4>
       <h4>RAG 技術</h4>
         <ul>
@@ -176,7 +173,5 @@ body.dark-mode .card:active {
           <li>LangGraph</li>
           <li>Vector DB</li>
         </ul>
-      </li>
-    </ul>
   </div>
 </div>
