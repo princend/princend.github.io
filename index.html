@@ -403,6 +403,136 @@ excerpt: ""
   body.dark-mode .description {
     color: #94a3b8;
   }
+
+/* === Featured Projects Section (Webflow Style) === */
+.section.featured-projects-section {
+  background: #131106;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.container.featured-projects-container {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.featured-projects-left {
+  flex: 0 0 38vw;
+  padding: 6vw 3vw 6vw 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  background: #131106;
+}
+
+.work-tag {
+  display: inline-block;
+  background: #e6c97b;
+  color: #131106;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.3em 1em;
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+.featured-title {
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 1em;
+  line-height: 1.1;
+}
+
+.featured-desc {
+  font-size: 1.1em;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+.featured-projects-right {
+  flex: 1 1 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw 2vw;
+  padding: 6vw 6vw 6vw 3vw;
+  overflow-y: auto;
+  height: 100vh;
+  align-content: flex-start;
+}
+
+.project-card {
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 2vw 2vw 1.5vw 2vw;
+  color: #fff;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.project-card:nth-child(even) {
+  margin-top: 4vw; /* 交錯效果 */
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.2em;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.project-desc {
+  font-size: 1em;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .container.featured-projects-container {
+    flex-direction: column;
+  }
+  .featured-projects-left, .featured-projects-right {
+    width: 100vw;
+    height: auto;
+    position: static;
+    padding: 2em 1em;
+  }
+  .featured-projects-right {
+    grid-template-columns: 1fr;
+    gap: 2vw;
+    padding: 2em 1em;
+  }
+  .project-card:nth-child(even) {
+    margin-top: 0;
+  }
+}
 </style>
 
 <div class="welcome-message">
@@ -440,44 +570,41 @@ excerpt: ""
   </div>
 </div>
 
-<div class="content-section fade-in-section">
-  <h3>近期熱衷於開發與研究：</h3>
-  <div class="topic-grid">
-    <div class="topic-card">
-      <h4>Line Bot</h4>
-      <div class="topic-items">
-        <span>AI 問答</span>
-        <span>夜市營業表</span>
-        <span>台灣各地區天氣</span>
-      </div>
+<!-- Featured Projects Section Start -->
+<section class="section featured-projects-section fade-in-section">
+  <div class="container featured-projects-container">
+    <div class="featured-projects-left">
+      <div class="work-tag">WORK</div>
+      <h2 class="featured-title">近期熱衷於開發與研究</h2>
+      <p class="featured-desc">
+        這裡展示我最近熱衷開發與研究的主題，包含 AI、前端框架、工作流自動化等，持續探索新技術與應用。
+      </p>
     </div>
-    <div class="topic-card">
-      <h4>n8n 工作流</h4>
-      <div class="topic-items">
-        <span>擷取Brief AI電子報發送至Line群組</span>
-        <span>英文造句文法檢查</span>
-        <span>串接Google Sheet儲存單字</span>
+    <div class="featured-projects-right">
+      <div class="project-card">
+        <img src="assets/blog/2024-09-02-duty-students/result.jpg" alt="Line Bot" class="project-img" />
+        <h3 class="project-title">Line Bot</h3>
+        <p class="project-desc">AI 問答、夜市營業表、台灣各地區天氣</p>
       </div>
-    </div>
-    <div class="topic-card">
-      <h4>前端框架學習</h4>
-      <div class="topic-items">
-        <span>React</span>
-        <span>Vue</span>
-        <span>next.js</span>
-        <span>threejs</span>
+      <div class="project-card">
+        <img src="assets/blog/2024-08-03-fingerprint/audio-fingerprint.png" alt="n8n 工作流" class="project-img" />
+        <h3 class="project-title">n8n 工作流</h3>
+        <p class="project-desc">擷取Brief AI電子報發送至Line群組、英文造句文法檢查、串接Google Sheet儲存單字</p>
       </div>
-    </div>
-    <div class="topic-card">
-      <h4>RAG 技術</h4>
-      <div class="topic-items">
-        <span>LangChain</span>
-        <span>LangGraph</span>
-        <span>Vector DB</span>
+      <div class="project-card">
+        <img src="assets/blog/2025-04-22-react-learning/react-learning.png" alt="前端框架學習" class="project-img" />
+        <h3 class="project-title">前端框架學習</h3>
+        <p class="project-desc">React、Vue、next.js、threejs</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/blog/2024-08-24-taiwan-noodles/taiwan-noodles.jpg" alt="RAG 技術" class="project-img" />
+        <h3 class="project-title">RAG 技術</h3>
+        <p class="project-desc">LangChain、LangGraph、Vector DB</p>
       </div>
     </div>
   </div>
-</div>
+</section>
+<!-- Featured Projects Section End -->
 
 <div class="experience fade-in-section">
   <h2>經歷</h2>
