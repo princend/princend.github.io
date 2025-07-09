@@ -112,7 +112,7 @@ excerpt: ""
 
   .tag {
     padding: 0.4rem 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 0.9em;
     font-weight: 500;
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -121,6 +121,48 @@ excerpt: ""
 
   .tag:hover {
     transform: translateY(-2px);
+  }
+
+  /* Topic Card Grid for Research Section */
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .topic-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    height: 100%;
+    /* Make cards in the same row equal height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .topic-card h4 {
+    text-align: left;
+    /* Override the general h4 style */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid;
+    font-size: 1.1em;
+  }
+
+  .topic-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .topic-items span {
+    font-size: 0.95em;
+    line-height: 1.5;
+    display: block;
   }
 
   /* Light Mode */
@@ -148,6 +190,23 @@ excerpt: ""
 
   body.light-mode .tag:hover {
     background-color: #dbe1e6;
+  }
+
+  body.light-mode .topic-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  body.light-mode .topic-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  body.light-mode .topic-card h4 {
+    border-color: #e2e8f0;
+  }
+
+  body.light-mode .topic-items span {
+    color: #333;
   }
 
   /* Dark Mode */
@@ -180,6 +239,24 @@ excerpt: ""
 
   body.dark-mode .tag:hover {
     background-color: #475569;
+  }
+
+  body.dark-mode .topic-card {
+    background-color: #28364a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  body.dark-mode .topic-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  body.dark-mode .topic-card h4 {
+    color: #e0f2fe;
+    border-color: #334155;
+  }
+
+  body.dark-mode .topic-items span {
+    color: #cbd5e1;
   }
 
   /* Experience Section - Base */
@@ -305,11 +382,6 @@ excerpt: ""
     background-color: #277496;
   }
 
-  body.dark-mode .job {
-    background-color: #1e293b;
-  }
-
-
   body.dark-mode .job::after {
     background-color: #38bdf8;
   }
@@ -365,25 +437,35 @@ excerpt: ""
 
 <div class="content-section fade-in-section">
   <h3>近期熱衷於開發與研究：</h3>
-  <h4>Line Bot</h4>
-  <ul>
-    <li>AI 問答</li>
-    <li>夜市營業表</li>
-    <li>台灣各地區天氣</li>
-  </ul>
-  <h4>n8n 工作流</h4>
-  <ul>
-    <li>擷取Brief AI電子報發送至Line群組</li>
-    <li>英文造句文法檢查</li>
-    <li>串接Google Sheet儲存單字</li>
-  </ul>
-  <h4>React與Vue框架學習</h4>
-  <h4>RAG 技術</h4>
-  <ul>
-    <li>LangChain</li>
-    <li>LangGraph</li>
-    <li>Vector DB</li>
-  </ul>
+  <div class="topic-grid">
+    <div class="topic-card">
+      <h4>Line Bot</h4>
+      <div class="topic-items">
+        <span>AI 問答</span>
+        <span>夜市營業表</span>
+        <span>台灣各地區天氣</span>
+      </div>
+    </div>
+    <div class="topic-card">
+      <h4>n8n 工作流</h4>
+      <div class="topic-items">
+        <span>擷取Brief AI電子報發送至Line群組</span>
+        <span>英文造句文法檢查</span>
+        <span>串接Google Sheet儲存單字</span>
+      </div>
+    </div>
+    <div class="topic-card">
+      <h4>React與Vue框架學習</h4>
+    </div>
+    <div class="topic-card">
+      <h4>RAG 技術</h4>
+      <div class="topic-items">
+        <span>LangChain</span>
+        <span>LangGraph</span>
+        <span>Vector DB</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="experience fade-in-section">
