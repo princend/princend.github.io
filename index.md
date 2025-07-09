@@ -245,78 +245,54 @@ body.dark-mode .experience:active {
     </ul>
   </div>
 
-  <div class="card">
-    <h3>學經歷 (Education &amp; Experience)</h3>
-    <ul class="timeline">
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>軟體工程師</h5>
-          <p>工作經驗</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>前端工程師</h5>
-          <p>工作經驗</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>全端工程師</h5>
-          <p>工作經驗</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>國立臺灣科技大學</h5>
-          <p>學歷</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>臺中市立臺中工業高級中等學校</h5>
-          <p>學歷</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>臺中市立神岡國民中學</h5>
-          <p>學歷</p>
-        </div>
-      </li>
-      <li class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5>臺中市岸裡國民小學</h5>
-          <p>學歷</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-
   <div class="experience">
      <h2>工作經歷</h2>
         <div class="job">
-            <div class="job-title">前端開發工程師</div>
-            <div class="company">科技公司・2022 - 現在</div>
+            <div class="job-title">軟體工程師</div>
+            <div class="company">半導體業・2025.01 - 2025.07</div>
             <div class="description">
-                負責開發和維護公司主要產品的前端介面，使用 React 和 TypeScript 建構高效能的 Web 應用程式，並與設計師和後端工程師密切合作。
+                機台操作介面開發及維護。
             </div>
         </div>
         <div class="job">
-            <div class="job-title">初級前端開發者</div>
-            <div class="company">新創公司・2021 - 2022</div>
+            <div class="job-title">前端工程師</div>
+            <div class="company">科技公司・2020.10 - 2024.04</div>
             <div class="description">
-                參與多個客戶專案的開發，學習現代前端框架和工具，並建立了紮實的 JavaScript 和 CSS 基礎。
+                CMS開發及維護。
+            </div>
+        </div>
+        <div class="job">
+            <div class="job-title">前端工程師</div>
+            <div class="company">科技公司・2018.09 - 2020.08</div>
+            <div class="description">
+                ELK系統及報表系統開發及維護。
+            </div>
+        </div>
+            <div class="job">
+            <div class="job-title">全端工程師</div>
+            <div class="company">醫院・2017.09 - 2018.05</div>
+            <div class="description">
+                醫工系統及健檢系統開發及維護。
             </div>
         </div>
     </div>
+  <div class="experience">
+     <h2>學歷</h2>
+        <div class="job">
+            <div class="job-title">國立臺灣科技大學</div>
+            <div class="company">資訊管理學系・2010.09 - 2014.06</div>
+        </div>
+        <div class="job">
+            <div class="job-title">臺中市立臺中工業高級中等學校</div>
+            <div class="company">資訊科・2008.09 - 2010.06</div>
+        </div>
+        <div class="job">
+            <div class="job-title">臺中市立神岡國民中學</div>
+        </div>
+                <div class="job">
+            <div class="job-title">臺中市岸裡國民小學</div>
+        </div>
+    </div>  
 
   <div class="card">
     <h3>技能與興趣 (Skills &amp; Hobbies)</h3>
