@@ -143,62 +143,73 @@ body.dark-mode .timeline::before { background: #555; }
 body.dark-mode .timeline-dot { background: #888; border: 2px solid #3c3c3c; }
 body.dark-mode .timeline-content p { color: #bbb; }
 
-         .experience {
-            background-color: #1e293b;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 700px;
-            margin: auto;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            position: relative;
-        }
-        .experience h2 {
-            color: #e0f2fe;
-            margin-bottom: 20px;
-        }
-        .job {
-            margin-bottom: 30px;
-            position: relative;
-            padding-left: 30px;
-        }
-        .job::before {
-            content: "";
-            position: absolute;
-            top: 30px;
-            left: 9px;
-            width: 2px;
-            height: 100%;
-            background-color: #277496;
-        }
-        .job::after {
-            content: "";
-            position: absolute;
-            top: 8px;
-            left: 4px;
-            width: 12px;
-            height: 12px;
-            background-color: #277496;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        .job:last-child::before {
-            height: 0px; /* 最後一個只畫到圓點為止 */
-        }
+/* Experience Section - Base */
+.experience {
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.experience h2 {
+  margin-bottom: 20px;
+}
+.job {
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 30px;
+}
+.job::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 9px;
+  width: 2px;
+  height: 100%;
+}
+.job::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.job:last-child::before {
+  height: 0px; /* 最後一個只畫到圓點為止 */
+}
+.job-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.company {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.description {
+  line-height: 1.6;
+}
 
-        .job-title {
-            font-weight: bold;
-            color: #f1f5f9;
-            font-size: 1.2em;
-        }
-        .company {
-            color: #38bdf8;
-            margin-top: 4px;
-            margin-bottom: 8px;
-        }
-        .description {
-            color: #94a3b8;
-            line-height: 1.6;
-        }
+/* Experience Section - Light Mode */
+body.light-mode .experience { background: #f8f9fa; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+body.light-mode .experience h2 { color: #333; }
+body.light-mode .job::before { background-color: #ddd; }
+body.light-mode .job::after { background-color: #aaa; }
+body.light-mode .job-title { color: #222; }
+body.light-mode .company { color: #007bff; }
+body.light-mode .description { color: #555; }
+
+/* Experience Section - Dark Mode */
+body.dark-mode .experience { background-color: #1e293b; border: 1px solid #277496; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
+body.dark-mode .experience h2 { color: #e0f2fe; }
+body.dark-mode .job::before { background-color: #277496; }
+body.dark-mode .job::after { background-color: #38bdf8; }
+body.dark-mode .job-title { color: #f1f5f9; }
+body.dark-mode .company { color: #38bdf8; }
+body.dark-mode .description { color: #94a3b8; }
 </style>
 
 <div class="welcome-message">
