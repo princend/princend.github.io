@@ -94,12 +94,9 @@ body.dark-mode .card:active {
 
 /* Experience Section - Base */
 .experience {
-  border-radius: 15px;
-  padding: 30px;
   width:100%;
-  margin: auto;
-  position: relative;
-  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+  margin-bottom: 3rem; /* 為區塊之間增加間距 */
+  position: relative; /* 保留給時間軸定位用 */
 }
 .experience h2 {
   margin-bottom: 20px;
@@ -143,38 +140,20 @@ body.dark-mode .card:active {
 }
 
 /* Experience Section - Light Mode */
-body.light-mode .experience { background: #f8f9fa; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
 body.light-mode .experience h2 { color: #333; }
 body.light-mode .job::before { background-color: #ddd; }
 body.light-mode .job::after { background-color: #aaa; }
 body.light-mode .job-title { color: #222; }
 body.light-mode .company { color: #007bff; }
 body.light-mode .description { color: #555; }
-body.light-mode .experience:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-body.light-mode .experience:active {
-  transform: translateY(1px) scale(0.99);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
 
 /* Experience Section - Dark Mode */
-body.dark-mode .experience { background-color: #1e293b; border: 1px solid #277496; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
 body.dark-mode .experience h2 { color: #e0f2fe; }
 body.dark-mode .job::before { background-color: #277496; }
 body.dark-mode .job::after { background-color: #38bdf8; }
 body.dark-mode .job-title { color: #f1f5f9; }
 body.dark-mode .company { color: #38bdf8; }
 body.dark-mode .description { color: #94a3b8; }
-body.dark-mode .experience:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.35);
-}
-body.dark-mode .experience:active {
-  transform: translateY(1px) scale(0.99);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-}
 </style>
 
 <div class="welcome-message">
@@ -193,49 +172,6 @@ body.dark-mode .experience:active {
       <li> 無人自願作惡。</li>
     </ul>
   </div>
-
-  <div class="experience">
-     <h2>工作經歷</h2>
-        <div class="job">
-            <div class="job-title">軟體工程師</div>
-            <div class="company">半導體業・2025.01 - 2025.07</div>
-            <div class="description">
-                機台操作介面開發及維護。
-            </div>
-        </div>
-        <div class="job">
-            <div class="job-title">前端工程師</div>
-            <div class="company">科技公司・2020.10 - 2024.04</div>
-            <div class="description">
-                CMS開發及維護。
-            </div>
-        </div>
-        <div class="job">
-            <div class="job-title">前端工程師</div>
-            <div class="company">科技公司・2018.09 - 2020.08</div>
-            <div class="description">
-                ELK系統及報表系統開發及維護。
-            </div>
-        </div>
-            <div class="job">
-            <div class="job-title">全端工程師</div>
-            <div class="company">醫院・2017.09 - 2018.05</div>
-            <div class="description">
-                醫工系統及健檢系統開發及維護。
-            </div>
-        </div>
-    </div>
-  <div class="experience">
-     <h2>學歷</h2>
-        <div class="job">
-            <div class="job-title">國立臺灣科技大學</div>
-            <div class="company">資訊管理學系・2010.09 - 2014.06</div>
-        </div>
-        <div class="job">
-            <div class="job-title">臺中市立臺中工業高級中等學校</div>
-            <div class="company">資訊科・2008.09 - 2010.06</div>
-        </div>
-    </div>  
 
   <div class="card">
     <h3>技能與興趣</h3>
@@ -284,3 +220,46 @@ body.dark-mode .experience:active {
         </ul>
   </div>
 </div>
+
+<div class="experience">
+   <h2>工作經歷</h2>
+      <div class="job">
+          <div class="job-title">軟體工程師</div>
+          <div class="company">半導體業・2025.01 - 2025.07</div>
+          <div class="description">
+              機台操作介面開發及維護。
+          </div>
+      </div>
+      <div class="job">
+          <div class="job-title">前端工程師</div>
+          <div class="company">科技公司・2020.10 - 2024.04</div>
+          <div class="description">
+              CMS開發及維護。
+          </div>
+      </div>
+      <div class="job">
+          <div class="job-title">前端工程師</div>
+          <div class="company">科技公司・2018.09 - 2020.08</div>
+          <div class="description">
+              ELK系統及報表系統開發及維護。
+          </div>
+      </div>
+          <div class="job">
+          <div class="job-title">全端工程師</div>
+          <div class="company">醫院・2017.09 - 2018.05</div>
+          <div class="description">
+              醫工系統及健檢系統開發及維護。
+          </div>
+      </div>
+  </div>
+<div class="experience">
+   <h2>學歷</h2>
+      <div class="job">
+          <div class="job-title">國立臺灣科技大學</div>
+          <div class="company">資訊管理學系・2010.09 - 2014.06</div>
+      </div>
+      <div class="job">
+          <div class="job-title">臺中市立臺中工業高級中等學校</div>
+          <div class="company">資訊科・2008.09 - 2010.06</div>
+      </div>
+  </div>
