@@ -150,7 +150,7 @@ body.dark-mode .timeline-content p { color: #bbb; }
   max-width: 700px;
   margin: auto;
   position: relative;
-  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 .experience h2 {
   margin-bottom: 20px;
@@ -201,6 +201,14 @@ body.light-mode .job::after { background-color: #aaa; }
 body.light-mode .job-title { color: #222; }
 body.light-mode .company { color: #007bff; }
 body.light-mode .description { color: #555; }
+body.light-mode .experience:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+body.light-mode .experience:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
 
 /* Experience Section - Dark Mode */
 body.dark-mode .experience { background-color: #1e293b; border: 1px solid #277496; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
@@ -210,6 +218,14 @@ body.dark-mode .job::after { background-color: #38bdf8; }
 body.dark-mode .job-title { color: #f1f5f9; }
 body.dark-mode .company { color: #38bdf8; }
 body.dark-mode .description { color: #94a3b8; }
+body.dark-mode .experience:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+body.dark-mode .experience:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
 </style>
 
 <div class="welcome-message">
