@@ -642,29 +642,141 @@ excerpt: ""
   </div>
 </div>
 
-<div class="content-section fade-in-section">
-  <h3>技能與興趣</h3>
-  <h4>電腦語言</h4>
-  <div class="tag-container">
-    <span class="tag">C++</span>
-    <span class="tag">TypeScript</span>
-    <span class="tag">Python</span>
+<!-- Skills & Interests Section Start -->
+<style>
+  .skills-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .skills-container {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .skills-sticky-panel {
+    flex: 0 0 38vw;
+    padding: 6vw 6vw 6vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    position: sticky;
+    top: 3vw;
+    align-self: flex-start;
+    z-index: 2;
+  }
+  .skills-cards-panel {
+    flex: 1 1 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw 2vw;
+    padding: 6vw 3vw 6vw 6vw;
+    align-content: flex-start;
+  }
+  .skills-card {
+    background: #181818;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    padding: 2vw 2vw 1.5vw 2vw;
+    color: #fff;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .skills-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    z-index: 3;
+  }
+  .skills-card:nth-child(even) {
+    margin-top: 4vw;
+  }
+  .skills-card-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .skills-tag {
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+    background: #334155;
+    color: #cbd5e1;
+    margin-bottom: 0.5rem;
+  }
+  @media (max-width: 900px) {
+    .skills-section, .skills-container {
+      flex-direction: column !important;
+    }
+    .skills-sticky-panel, .skills-cards-panel {
+      width: 100vw;
+      height: auto;
+      position: static;
+      padding: 2em 1em;
+    }
+    .skills-cards-panel {
+      grid-template-columns: 1fr;
+      gap: 2vw;
+      padding: 2em 1em;
+    }
+    .skills-card:nth-child(even) {
+      margin-top: 0;
+    }
+  }
+</style>
+<section class="skills-section fade-in-section">
+  <div class="skills-container">
+    <div class="skills-cards-panel">
+      <div class="skills-card">
+        <div class="skills-card-title">電腦語言</div>
+        <div class="skills-tags">
+          <span class="skills-tag">C++</span>
+          <span class="skills-tag">TypeScript</span>
+          <span class="skills-tag">Python</span>
+        </div>
+      </div>
+      <div class="skills-card">
+        <div class="skills-card-title">興趣</div>
+        <div class="skills-tags">
+          <span class="skills-tag">游泳</span>
+          <span class="skills-tag">羽球</span>
+          <span class="skills-tag">健身</span>
+          <span class="skills-tag">慢跑</span>
+          <span class="skills-tag">單車</span>
+        </div>
+      </div>
+      <div class="skills-card">
+        <div class="skills-card-title">曾參與社團</div>
+        <div class="skills-tags">
+          <span class="skills-tag">熱舞社</span>
+          <span class="skills-tag">吉他社</span>
+          <span class="skills-tag">武術社</span>
+        </div>
+      </div>
+    </div>
+    <div class="skills-sticky-panel">
+      <div class="label-heading">Skills & Interests</div>
+      <div class="heading-h2">技能與興趣</div>
+      <p class="paragraph-16">這裡是我的技能、興趣與社團經歷，歡迎交流！</p>
+    </div>
   </div>
-  <h4>興趣</h4>
-  <div class="tag-container">
-    <span class="tag">游泳</span>
-    <span class="tag">羽球</span>
-    <span class="tag">健身</span>
-    <span class="tag">慢跑</span>
-    <span class="tag">單車</span>
-  </div>
-  <h4>曾參與社團</h4>
-  <div class="tag-container">
-    <span class="tag">熱舞社</span>
-    <span class="tag">吉他社</span>
-    <span class="tag">武術社</span>
-  </div>
-</div>
+</section>
+<!-- Skills & Interests Section End -->
 
 <style>
   .section {
