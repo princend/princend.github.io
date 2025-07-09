@@ -50,9 +50,9 @@ excerpt: ""
 
 /* Light Mode */
 body.light-mode .card {
-  background: #fdfdfd;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 body.light-mode .card h3 {
   border-bottom: 2px solid #eee;
@@ -72,9 +72,9 @@ body.light-mode .card:active {
 
 /* Dark Mode */
 body.dark-mode .card {
-  background: #3c3c3c;
-  border: 1px solid #555;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  background-color: #1e293b;
+    border: 1px solid #277496;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 body.dark-mode .card h3 {
   border-bottom: 2px solid #555;
