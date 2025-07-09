@@ -22,92 +22,6 @@ excerpt: ""
     gap: 2rem;
   }
 
-  .card {
-    border-radius: 8px;
-    padding: 1.5rem;
-    height: 100%;
-    /* 讓同一行的卡片等高 */
-    transition: background-color 0.3s, border-color 0.3s, transform 0.2s, box-shadow 0.3s;
-    /* cursor: pointer; */
-  }
-
-  .card h3 {
-    margin-top: 0;
-    padding-bottom: 0.5rem;
-  }
-
-  .card h4 {
-    margin-top: 1.5rem;
-  }
-
-  .card ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .card li {
-    padding: 0.3rem 0;
-  }
-
-  .card blockquote {
-    font-size: 1rem;
-    padding-left: 1rem;
-    margin-left: 0;
-    font-style: italic;
-  }
-
-  /* Light Mode */
-  body.light-mode .card {
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  }
-
-  body.light-mode .card h3 {
-    border-bottom: 2px solid #eee;
-  }
-
-  body.light-mode .card blockquote {
-    border-left: 4px solid #ccc;
-    color: #555;
-  }
-
-  body.light-mode .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-
-  body.light-mode .card:active {
-    transform: translateY(1px) scale(0.99);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-
-  /* Dark Mode */
-  body.dark-mode .card {
-    background-color: #1e293b;
-    border: 1px solid #277496;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  }
-
-  body.dark-mode .card h3 {
-    border-bottom: 2px solid #555;
-  }
-
-  body.dark-mode .card blockquote {
-    border-left: 4px solid #666;
-    color: #ccc;
-  }
-
-  body.dark-mode .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
-  }
-
-  body.dark-mode .card:active {
-    transform: translateY(1px) scale(0.99);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  }
-
   /* Fade-in Animation on Scroll */
   .fade-in-section {
     opacity: 0;
@@ -134,15 +48,17 @@ excerpt: ""
     padding-bottom: 0.75rem;
     margin-bottom: 1.5rem;
     position: relative;
+    text-align: center;
   }
 
   .content-section h3::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
     width: 50px;
     height: 3px;
+    transform: translateX(-50%);
   }
 
   .content-section h4 {
@@ -373,17 +289,7 @@ excerpt: ""
 
 <div class="content-section fade-in-section">
   <h3>關於我 </h3>
-  <h4>名字 </h4>
-  <div class="info-box">你可以叫我 Princend 或是 John</div>
-  <h4>Why Princend?</h4>
-  <div class="info-box"><strong>Princend</strong> = <strong>Prince</strong> + <strong>and</strong><br>因為 "Prince"
-    這個ID已被使用，而我中文名字的最後一個字發音像 "and"，所以組合成了 "Princend"。
-  </div>
-  <h4>座右銘</h4>
-  <ul>
-    <li> 興趣可以當飯吃嗎？只能把吃飯當興趣。</li>
-    <li> 無人自願作惡。</li>
-  </ul>
+  你可以叫我 Princend 或是 John，擁有6年前端工程師的經驗，目前對AI領域有極大興趣。
 </div>
 
 <div class="content-section fade-in-section">
