@@ -240,10 +240,16 @@ excerpt: ""
   .job {
     margin-bottom: 30px;
     position: relative;
-    width: calc(50% - 25px);
+    width: calc(50% - 40px);
     /* 50% width minus some gap */
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
+  .job:hover {
+    transform: translateY(-5px);
+  }
   /* Alternating job blocks */
   .job:nth-of-type(odd) {
     left: 0;
@@ -251,14 +257,14 @@ excerpt: ""
   }
 
   .job:nth-of-type(even) {
-    left: calc(50% + 25px);
+    left: calc(50% + 40px);
     /* 50% plus the gap */
   }
 
   .job::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: calc(1.5rem + 8px); /* Adjust for padding */
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -267,13 +273,11 @@ excerpt: ""
 
   /* Positioning the dots on the timeline */
   .job:nth-of-type(odd)::after {
-    right: -31px;
-    /* (25px gap + half of dot width) */
+    right: -46px; /* (40px gap + half of dot width) */
   }
 
   .job:nth-of-type(even)::after {
-    left: -31px;
-    /* (25px gap + half of dot width) */
+    left: -46px; /* (40px gap + half of dot width) */
   }
 
   .job-title {
@@ -299,6 +303,15 @@ excerpt: ""
     background-color: #ddd;
   }
 
+  body.light-mode .job {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  body.light-mode .job:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
   body.light-mode .job::after {
     background-color: #aaa;
   }
@@ -322,6 +335,15 @@ excerpt: ""
 
   body.dark-mode .experience::before {
     background-color: #277496;
+  }
+
+  body.dark-mode .job {
+    background-color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  body.dark-mode .job:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
 
   body.dark-mode .job::after {
@@ -446,14 +468,3 @@ excerpt: ""
     <div class="company">資訊科・2008.09 - 2010.06</div>
   </div>
 </div>
-<!-- <div class="experience">
-  <h2>學歷</h2>
-  <div class="job">
-    <div class="job-title">國立臺灣科技大學</div>
-    <div class="company">資訊管理學系・2010.09 - 2014.06</div>
-  </div>
-  <div class="job">
-    <div class="job-title">臺中市立臺中工業高級中等學校</div>
-    <div class="company">資訊科・2008.09 - 2010.06</div>
-  </div>
-</div> -->
