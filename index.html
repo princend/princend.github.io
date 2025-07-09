@@ -141,10 +141,11 @@ excerpt: ""
 
   .content-section .info-box {
     margin-left: 0;
-    padding: 1rem 1.5rem;
+    padding: 1.25rem 1.5rem;
     border-radius: 8px;
     font-style: normal;
     font-size: 1rem;
+    border: 1px solid;
   }
 
   .content-section ul {
@@ -175,8 +176,8 @@ excerpt: ""
     background-color: #007bff;
   }
   body.light-mode .content-section .info-box {
-    background-color: #e9ecef;
-    border-left: 4px solid #007bff;
+    background-color: #fff;
+    border-color: #e2e8f0;
   }
   body.light-mode .content-section li::before {
     background-color: #007bff;
@@ -193,8 +194,8 @@ excerpt: ""
     background-color: #38bdf8;
   }
   body.dark-mode .content-section .info-box {
-    background-color: #334155;
-    border-left: 4px solid #38bdf8;
+    background-color: #28364a; /* A slightly lighter shade than the section */
+    border-color: #334155;
   }
   body.dark-mode .content-section li::before {
     background-color: #38bdf8;
@@ -208,42 +209,56 @@ excerpt: ""
     position: relative;
     /* 保留給時間軸定位用 */
   }
+  /* The actual timeline line */
+  .experience::before {
+    content: '';
+    position: absolute;
+    top: 50px; /* Start after the title */
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+  }
 
   .experience h2 {
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .job {
     margin-bottom: 30px;
     position: relative;
-    padding-left: 30px;
+    width: calc(50% - 25px); /* 50% width minus some gap */
   }
 
-  .job::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 9px;
-    width: 2px;
-    height: 100%;
+  /* Alternating job blocks */
+  .job:nth-of-type(odd) {
+    left: 0;
+    text-align: right;
+  }
+
+  .job:nth-of-type(even) {
+    left: calc(50% + 25px); /* 50% plus the gap */
   }
 
   .job::after {
     content: "";
     position: absolute;
     top: 8px;
-    left: 4px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     z-index: 1;
   }
 
-  .job:last-child::before {
-    height: 0px;
-    /* 最後一個只畫到圓點為止 */
+  /* Positioning the dots on the timeline */
+  .job:nth-of-type(odd)::after {
+    right: -31px; /* (25px gap + half of dot width) */
   }
 
+  .job:nth-of-type(even)::after {
+    left: -31px; /* (25px gap + half of dot width) */
+  }
   .job-title {
     font-weight: bold;
     font-size: 1.2em;
@@ -263,7 +278,7 @@ excerpt: ""
     color: #333;
   }
 
-  body.light-mode .job::before {
+  body.light-mode .experience::before {
     background-color: #ddd;
   }
 
@@ -288,7 +303,7 @@ excerpt: ""
     color: #e0f2fe;
   }
 
-  body.dark-mode .job::before {
+  body.dark-mode .experience::before {
     background-color: #277496;
   }
 
@@ -319,7 +334,7 @@ excerpt: ""
   <div class="info-box">你可以叫我 Princend 或是 John</div>
   <h4>Why Princend?</h4>
   <div class="info-box"><strong>Princend</strong> = <strong>Prince</strong> + <strong>and</strong><br>因為 "Prince"
-    這個ID已被使用，而我中文名字的最後一個字發音像 "and"，所以組合成了 "Princend"。</blockquote>
+    這個ID已被使用，而我中文名字的最後一個字發音像 "and"，所以組合成了 "Princend"。
   </div>
   <h4>座右銘</h4>
   <ul>
