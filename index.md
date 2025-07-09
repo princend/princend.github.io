@@ -143,13 +143,14 @@ body.dark-mode .timeline::before { background: #555; }
 body.dark-mode .timeline-dot { background: #888; border: 2px solid #3c3c3c; }
 body.dark-mode .timeline-content p { color: #bbb; }
 
-        .experience {
+         .experience {
             background-color: #1e293b;
             border-radius: 15px;
             padding: 30px;
             max-width: 700px;
             margin: auto;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            position: relative;
         }
         .experience h2 {
             color: #e0f2fe;
@@ -158,18 +159,32 @@ body.dark-mode .timeline-content p { color: #bbb; }
         .job {
             margin-bottom: 30px;
             position: relative;
-            padding-left: 20px;
+            padding-left: 30px;
         }
         .job::before {
             content: "";
             position: absolute;
+            top: 0;
+            left: 9px;
+            width: 2px;
+            height: 100%;
+            background-color: #38bdf8;
+        }
+        .job::after {
+            content: "";
+            position: absolute;
             top: 8px;
-            left: 0;
-            width: 10px;
-            height: 10px;
+            left: 4px;
+            width: 12px;
+            height: 12px;
             background-color: #38bdf8;
             border-radius: 50%;
+            z-index: 1;
         }
+        .job:last-child::before {
+            height: 8px; /* 最後一個只畫到圓點為止 */
+        }
+
         .job-title {
             font-weight: bold;
             color: #f1f5f9;
@@ -260,7 +275,6 @@ body.dark-mode .timeline-content p { color: #bbb; }
 
   <div class="experience">
      <h2>工作經歷</h2>
-
         <div class="job">
             <div class="job-title">前端開發工程師</div>
             <div class="company">科技公司・2022 - 現在</div>
@@ -268,7 +282,6 @@ body.dark-mode .timeline-content p { color: #bbb; }
                 負責開發和維護公司主要產品的前端介面，使用 React 和 TypeScript 建構高效能的 Web 應用程式，並與設計師和後端工程師密切合作。
             </div>
         </div>
-
         <div class="job">
             <div class="job-title">初級前端開發者</div>
             <div class="company">新創公司・2021 - 2022</div>
