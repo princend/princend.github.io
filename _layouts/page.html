@@ -2,6 +2,11 @@
 layout: default
 ---
 
+
+{% if page.url == "/" %}
+{{content}}
+
+{% else %}
 {% include site-header.html %}
 
 <main class="main  container">
@@ -19,3 +24,6 @@ layout: default
 </main>
 
 {% include site-footer.html %}
+
+{% endif %}
+}
