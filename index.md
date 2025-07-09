@@ -25,7 +25,7 @@ excerpt: ""
   padding: 1.5rem;
   height: 100%; /* 讓同一行的卡片等高 */
   transition: background-color 0.3s, border-color 0.3s, transform 0.2s, box-shadow 0.3s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .card h3 {
   margin-top: 0;
