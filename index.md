@@ -105,8 +105,8 @@ body.dark-mode .card:active {
     <blockquote><strong>Princend</strong> = <strong>Prince</strong> + <strong>and</strong><br>因為 "Prince" 這個ID已被使用，而我中文名字的最後一個字發音像 "and"，所以組合成了 "Princend"。</blockquote>
     <h4>座右銘 (Motto)</h4>
     <ul>
-      <li>👉 興趣可以當飯吃嗎？只能把吃飯當興趣。</li>
-      <li>👉 無人自願作惡。</li>
+      <li> 興趣可以當飯吃嗎？只能把吃飯當興趣。</li>
+      <li> 無人自願作惡。</li>
     </ul>
   </div>
 
@@ -114,16 +114,16 @@ body.dark-mode .card:active {
     <h3>學經歷 (Education &amp; Experience)</h3>
     <h4>學歷</h4>
     <ul>
-      <li>🎓 國立臺灣科技大學</li>
-      <li>🎓 臺中市立臺中工業高級中等學校</li>
-      <li>🎓 臺中市立神岡國民中學</li>
-      <li>🎓 臺中市岸裡國民小學</li>
+      <li> 國立臺灣科技大學</li>
+      <li> 臺中市立臺中工業高級中等學校</li>
+      <li> 臺中市立神岡國民中學</li>
+      <li> 臺中市岸裡國民小學</li>
     </ul>
     <h4>工作經驗</h4>
     <ul>
-      <li>👨‍💻 軟體工程師</li>
-      <li>👨‍💻 前端工程師</li>
-      <li>👨‍💻 全端工程師</li>
+      <li> 軟體工程師</li>
+      <li> 前端工程師</li>
+      <li> 全端工程師</li>
     </ul>
   </div>
 
@@ -137,17 +137,17 @@ body.dark-mode .card:active {
     </ul>
     <h4>興趣</h4>
     <ul>
-      <li>🏊 游泳</li>
-      <li>🏸 羽球</li>
-      <li>🏋️ 健身</li>
-      <li>🏃 慢跑</li>
-      <li>🚲 單車</li>
+      <li> 游泳</li>
+      <li> 羽球</li>
+      <li> 健身</li>
+      <li> 慢跑</li>
+      <li> 單車</li>
     </ul>
     <h4>曾參與社團</h4>
     <ul>
-      <li>🕺 熱舞社</li>
-      <li>🎸 吉他社</li>
-      <li>🥋 武術社</li>
+      <li> 熱舞社</li>
+      <li> 吉他社</li>
+      <li> 武術社</li>
     </ul>
   </div>
 
