@@ -784,6 +784,30 @@ excerpt: ""
     opacity: 1;
     transform: translateX(0);
   }
+
+  /* Animations for Project Section Cards */
+  .project-showcase-section.fade-in-section {
+    /* 覆蓋預設的淡入動畫，讓容器本身作為觸發器 */
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-showcase-section .project-link-wrapper {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+
+  .project-showcase-section.is-visible .project-link-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered delay for cards */
+  .project-showcase-section.is-visible .project-link-wrapper:nth-child(2) { transition-delay: 0.15s; }
+  .project-showcase-section.is-visible .project-link-wrapper:nth-child(3) { transition-delay: 0.25s; }
+  .project-showcase-section.is-visible .project-link-wrapper:nth-child(4) { transition-delay: 0.4s; }
 </style>
 <style>
   .section {
@@ -1034,7 +1058,7 @@ excerpt: ""
 
 
 
-<section class="section">
+<section class="section project-showcase-section fade-in-section">
   <div class="w-layout-blockcontainer container w-container">
     <div class="w-layout-grid grid---ratio-1x2">
       <div class="title-wrapper-sticky">
