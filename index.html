@@ -735,12 +735,9 @@ excerpt: ""
     .skills-section {
       flex-direction: column;
     }
+
     .skills-container {
       flex-direction: column-reverse;
-    }
-    
-    .title-wrapper-sticky{
-      position: unset;
     }
 
     .skills-sticky-panel,
@@ -760,6 +757,19 @@ excerpt: ""
     .skills-card:nth-child(even) {
       margin-top: 0;
     }
+
+    .grid---ratio-1x2 {
+      grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr;
+      padding-bottom: 2rem;
+    }
+
+    .project-link-wrapper.project-even {
+      bottom: 0;
+    }
   }
 
   /* Animations for Skills Section */
@@ -777,11 +787,13 @@ excerpt: ""
   }
 
   .skills-section .skills-cards-panel {
-    transform: translateX(-50px); /* 從左側進場 */
+    transform: translateX(-50px);
+    /* 從左側進場 */
   }
 
   .skills-section .skills-sticky-panel {
-    transform: translateX(50px); /* 從右側進場 */
+    transform: translateX(50px);
+    /* 從右側進場 */
   }
 
   .skills-section.is-visible .skills-cards-panel,
@@ -805,11 +817,13 @@ excerpt: ""
   }
 
   .project-showcase-section .title-wrapper-sticky {
-    transform: translateX(-50px); /* 從左側進場 */
+    transform: translateX(-50px);
+    /* 從左側進場 */
   }
 
   .project-showcase-section .project-grid {
-    transform: translateX(50px); /* 從右側進場 */
+    transform: translateX(50px);
+    /* 從右側進場 */
   }
 
   .project-showcase-section.is-visible .title-wrapper-sticky,
@@ -817,8 +831,7 @@ excerpt: ""
     opacity: 1;
     transform: translateX(0);
   }
-</style>
-<style>
+
   .section {
     flex-direction: column;
     justify-content: center;
@@ -1009,6 +1022,12 @@ excerpt: ""
 
   body.dark-mode .heading-h2 {
     color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    .title-wrapper-sticky {
+      position: unset;
+    }
   }
 </style>
 
