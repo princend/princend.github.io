@@ -785,29 +785,33 @@ excerpt: ""
     transform: translateX(0);
   }
 
-  /* Animations for Project Section Cards */
+  /* Animations for Project Showcase Section */
   .project-showcase-section.fade-in-section {
     /* 覆蓋預設的淡入動畫，讓容器本身作為觸發器 */
     opacity: 1;
     transform: none;
   }
 
-  .project-showcase-section .project-link-wrapper {
+  .project-showcase-section .title-wrapper-sticky,
+  .project-showcase-section .project-grid {
     opacity: 0;
-    transform: translateY(40px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     will-change: opacity, transform;
   }
 
-  .project-showcase-section.is-visible .project-link-wrapper {
-    opacity: 1;
-    transform: translateY(0);
+  .project-showcase-section .title-wrapper-sticky {
+    transform: translateX(-50px); /* 從左側進場 */
   }
 
-  /* Staggered delay for cards */
-  .project-showcase-section.is-visible .project-link-wrapper:nth-child(2) { transition-delay: 0.15s; }
-  .project-showcase-section.is-visible .project-link-wrapper:nth-child(3) { transition-delay: 0.25s; }
-  .project-showcase-section.is-visible .project-link-wrapper:nth-child(4) { transition-delay: 0.4s; }
+  .project-showcase-section .project-grid {
+    transform: translateX(50px); /* 從右側進場 */
+  }
+
+  .project-showcase-section.is-visible .title-wrapper-sticky,
+  .project-showcase-section.is-visible .project-grid {
+    opacity: 1;
+    transform: translateX(0);
+  }
 </style>
 <style>
   .section {
