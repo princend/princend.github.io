@@ -9,7 +9,6 @@ feature_text: |
 
 excerpt: |
   到底是台式還是義式??
-  ![taiwan-noodles.jpg](/assets/blog/2024-08-24-taiwan-noodles/taiwan-noodles.jpg)
 feature_image: "https://picsum.photos/2560/600?image=292"  
 ---
 
