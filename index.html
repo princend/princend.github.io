@@ -756,6 +756,34 @@ excerpt: ""
       margin-top: 0;
     }
   }
+
+  /* Animations for Skills Section */
+  .skills-section.fade-in-section {
+    /* 覆蓋預設的淡入動畫，讓容器本身作為觸發器 */
+    opacity: 1;
+    transform: none;
+  }
+
+  .skills-section .skills-cards-panel,
+  .skills-section .skills-sticky-panel {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+
+  .skills-section .skills-cards-panel {
+    transform: translateX(-50px); /* 從左側進場 */
+  }
+
+  .skills-section .skills-sticky-panel {
+    transform: translateX(50px); /* 從右側進場 */
+  }
+
+  .skills-section.is-visible .skills-cards-panel,
+  .skills-section.is-visible .skills-sticky-panel {
+    opacity: 1;
+    transform: translateX(0);
+  }
 </style>
 <style>
   .section {
