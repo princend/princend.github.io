@@ -1,5 +1,5 @@
 ---
-title: JWT
+title: 毛玻璃效果
 categories:
 - Frontend
 - Tech
@@ -7,9 +7,6 @@ feature_image: "https://picsum.photos/2560/600?image=2"
 excerpt: |
  毛玻璃效果是一種將背景模糊且帶透明的視覺設計手法。常用於卡片、彈窗、選單等區塊，讓...
 ---
-
-# JWT
-
 
 ## 1. 毛玻璃（Glassmorphism）效果簡介
 現代網頁設計中，「毛玻璃」即 Glassmorphism 效果越來越常見。這種風格不只美觀，還能有效提升 UI 元素的層次感。本篇將簡單介紹毛玻璃效果的原理、主要樣式，以及簡易實作。
